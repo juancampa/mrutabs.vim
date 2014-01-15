@@ -67,8 +67,7 @@ def mrutabs_onEnteredTab():
         mru.insert(0, tab)
 
 def removeInvalidTabs():
-    filter(lambda t: t.valid, mru)
-    print mru
+    mru = filter(lambda t: t.valid, mru)
 
 def mrutabs_nextTab():
     global changingTabs
