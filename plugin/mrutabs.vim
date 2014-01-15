@@ -1,4 +1,4 @@
-pyfile keys.py
+pyfile %:p:h\mrutabs.py
 nnoremap <c-Tab> :py mrutabs_nextTab()<Cr>
 nnoremap <c-s-Tab> :py mrutabs_prevTab()<Cr>
 autocmd TabLeave * py mrutabs_onLeavingTab()
